@@ -1,0 +1,105 @@
+hero:
+  tagline: "Ślub"
+  title: "Sylwii i Michała"
+  description: >
+    Wieczór w sercu miasta — odważne kompozycje kwiatowe, późnonocne winyle
+    i lista gości pełna naszych ulubionych osób. Przyjdź na przysięgi, zostań
+    na północne espresso martini.
+  weekday: "Czwartek"
+  dateDisplay: "06 · 08 · 2026"
+  location: "Wrocław • Kościół Rzymskokatolicki pw. NMP na Piasku • Hotel Wodnik"
+
+story:
+  chapterLabel: "Rozdział pierwszy"
+  heading: "Nasza historia"
+  body: |
+    Poznaliśmy się pewnego rześkiego, jesiennego popołudnia, kiedy zwykła rozmowa
+    rozkwitła w nierozerwalną przyjaźń. Z czasem ta przyjaźń przerodziła się
+    w miłość — razem dzieliliśmy przygody, marzenia i wyzwania.
+    Dziś świętujemy nie tylko naszą miłość, ale też rodzinę i przyjaciół, którzy
+    towarzyszyli nam w tej podróży.
+  imageAsset: "wedshots/vadim-paripa-unsplash.jpg"
+  imageAlt: "Nasza wspólna historia"
+  highlights:
+    - "💌 Od przyjaciół do bratnich dusz"
+    - "✈️ Wyprawy przez kontynenty"
+    - "💍 Zaręczeni pod jesiennym niebem"
+
+schedule:
+  eyebrow: "Nasze świętowanie"
+  title: "Harmonogram dnia ślubu"
+  description: >
+    Śledź z nami każdy cenny moment — od przysięg po ostatni błyszczący toast.
+  events:
+    - number: "01"
+      label: "Kościół"
+      title: "Ceremonia w kościele"
+      description: >
+        Uroczysty ślub w kościele o 16:00. Prosimy o punktualne przybycie, by wspólnie
+        rozpocząć nasz dzień w modlitwie i błogosławieństwie.
+      details:
+        - "Ceremonia rozpoczyna się o 16:00"
+        - "Prosimy o przybycie 15 minut wcześniej"
+        - "Prosimy o wyciszenie telefonów"
+    - number: "02"
+      label: "Rejs"
+      title: "Rejs statkiem po Odrze"
+      description: >
+        Po ceremonii zapraszamy na rejs statkiem po Odrze — popłyniemy z kościoła
+        bezpośrednio do Hotelu Wodnik, gdzie kontynuujemy świętowanie.
+      details:
+        - "Zaokrętowanie po ceremonii (około 17:15)"
+        - "Przewidywany czas rejsu: ~45 minut"
+        - "Na pokładzie będą serwowane przekąski i drinki"
+    - number: "03"
+      label: "Przyjęcie"
+      title: "Przyjęcie w namiocie"
+      description: >
+        Po dopłynięciu do Hotelu Wodnik zapraszamy do namiotu na przyjęcie — obiad,
+        pierwszy taniec, zdjęcia, drinki i zabawa do późna.
+      details:
+        - "Wezwanie do stołu na obiad o 19:00"
+        - "Pierwszy taniec około 20:30"
+        - "Fotobudka i sesje zdjęciowe przez całą noc"
+        - "DJ i tańce do późnych godzin"
+
+gallery:
+  eyebrow: "Galeria"
+  title: "Przeglądaj wspomnienia"
+  description: >
+    Wyselekcjonowane chwile, których nigdy nie chcemy zapomnieć — od pierwszego spojrzenia
+    po ostatnie zimne ognie.
+  images:
+    - asset: "wedshots/jakob-owens-unsplash.jpg"
+      alt: "First look on the veranda"
+    - asset: "wedshots/leonardo-miranda-unsplash.jpg"
+      alt: "Bridal bouquet close-up"
+    - asset: "wedshots/nathan-dumlao-2-unsplash.jpg"
+      alt: "Couple walking through the garden"
+    - asset: "wedshots/nathan-dumlao-unsplash.jpg"
+      alt: "Sunset toast with friends"
+    - asset: "wedshots/nikita-shirokov-unsplash.jpg"
+      alt: "First dance candid"
+    - asset: "wedshots/sandy-millar-unsplash.jpg"
+      alt: "Bridal party cheering"
+    - asset: "wedshots/vadim-paripa-unsplash.jpg"
+      alt: "Sparkler send-off moment"
+
+cards:
+  - imageAlt: "RSVP"
+    title: "Potwierdź obecność"
+    description: "Daj nam znać, czy będziesz z nami tego wyjątkowego dnia!"
+    href: "/rsvp"
+  - imageAlt: "Wishlist"
+    title: "Lista życzeń"
+    description: "Zobacz naszą listę prezentów i pomóż nam rozpocząć nowy rozdział."
+    href: "/wishlist"
+
+countdown:
+  label: "Odliczanie do weekendu ślubnego"
+  heading: 'Odliczanie do "Powiedzenia Tak"'
+  message: >
+    Każdy wschód słońca przybliża nas do chwili, w której spotkamy się razem.
+    Zarezerwuj datę i przygotuj się na niezapomniane świętowanie.
+  target: "2026-08-06T16:00:00Z"
+  location: "Wrocław • Kościół Rzymskokatolicki pw. NMP na Piasku • Hotel Wodnik"
