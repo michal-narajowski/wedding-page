@@ -18,12 +18,9 @@ story:
     w miłość — razem dzieliliśmy przygody, marzenia i wyzwania.
     Dziś świętujemy nie tylko naszą miłość, ale też rodzinę i przyjaciół, którzy
     towarzyszyli nam w tej podróży.
-  imageAsset: "wedshots/vadim-paripa-unsplash.jpg"
+  imageAsset: "sesja1.jpg"
   imageAlt: "Nasza wspólna historia"
-  highlights:
-    - "💌 Od przyjaciół do bratnich dusz"
-    - "✈️ Wyprawy przez kontynenty"
-    - "💍 Zaręczeni pod jesiennym niebem"
+
 
 schedule:
   eyebrow: "Nasze świętowanie"
@@ -70,20 +67,10 @@ gallery:
     Wyselekcjonowane chwile, których nigdy nie chcemy zapomnieć — od pierwszego spojrzenia
     po ostatnie zimne ognie.
   images:
-    - asset: "wedshots/jakob-owens-unsplash.jpg"
-      alt: "First look on the veranda"
-    - asset: "wedshots/leonardo-miranda-unsplash.jpg"
-      alt: "Bridal bouquet close-up"
     - asset: "wedshots/nathan-dumlao-2-unsplash.jpg"
       alt: "Couple walking through the garden"
-    - asset: "wedshots/nathan-dumlao-unsplash.jpg"
-      alt: "Sunset toast with friends"
-    - asset: "wedshots/nikita-shirokov-unsplash.jpg"
-      alt: "First dance candid"
     - asset: "wedshots/sandy-millar-unsplash.jpg"
       alt: "Bridal party cheering"
-    - asset: "wedshots/vadim-paripa-unsplash.jpg"
-      alt: "Sparkler send-off moment"
 
 cards:
   - imageAlt: "RSVP"
