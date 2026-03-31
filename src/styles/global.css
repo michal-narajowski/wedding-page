@@ -17,12 +17,13 @@
     background-color: var(--color-background);
 
     /* Main */
-    --color-primary: #434a42;
-    --color-secondary: #d4dfc7;
-    --color-accent: #772e25;
-    --color-background: #d6ccc2;
-    --color-text-dark: #111111;
-    --color-text-light: #d6ccc2;
+    --color-primary: #4E0A1D; /* burgundy */
+    --color-secondary: #FFC0CB; /* light pink */
+    --color-accent: #6f3451;
+    --color-background: #f8eff2; /* light warm pink tint */
+    --color-background-gradient: linear-gradient(180deg, #fff8f9 0%, #f8eff2 45%, #e9d8d9 100%);
+    --color-text-dark: #2f1f24;
+    --color-text-light: #8a6a79;
 }
 
 @layer base {
@@ -34,8 +35,8 @@
 
     body {
         font-family: var(--font-sans);
-        background-color: var(--color-background);
-        color: var(--color-text);
+        background: var(--color-background-gradient);
+        color: var(--color-text-dark);
     }
 
     h1,
