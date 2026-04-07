@@ -139,4 +139,52 @@
             var(--color-text-light) 30%
         );
     }
+
+    .rsvp-modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 50;
+        place-items: center;
+        padding: 2rem;
+    }
+
+    .rsvp-modal--open {
+        display: grid;
+    }
+
+    .rsvp-modal__backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(15, 12, 18, 0.65);
+        backdrop-filter: blur(4px);
+    }
+
+    .rsvp-modal__panel {
+        position: relative;
+        width: min(560px, 100%);
+        background: white;
+        border-radius: 32px;
+        box-shadow: 0 32px 70px rgba(0, 0, 0, 0.16);
+        padding: 2.5rem;
+        z-index: 10;
+        border: 1px solid rgba(79, 10, 26, 0.08);
+    }
+
+    .rsvp-modal__close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        border: none;
+        background: transparent;
+        color: var(--color-primary);
+        font-size: 1.75rem;
+        cursor: pointer;
+        line-height: 1;
+    }
+
+    .rsvp-modal__content a {
+        color: inherit;
+        text-decoration: underline;
+    }
 }

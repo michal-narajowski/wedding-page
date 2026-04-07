@@ -2,25 +2,129 @@
 import Card from "./Card.astro";
 import { getEventData } from "../data/eventData";
 
-const { cards = [] } = getEventData();
+const { cards = [], contact } = getEventData();
 ---
 
 <section class="max-w-4xl mx-auto my-16 px-4">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {
-            cards.map((card) => (
-                <a
-                    href={card.href}
-                    class="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
-                >
-                    <Card
-                        image={card.image}
-                        imageAlt={card.imageAlt}
-                        title={card.title}
-                        description={card.description}
-                    />
-                </a>
-            ))
+            cards.map((card) => {
+                const isRsvpCard = card.href === "/rsvp";
+                const isWishlistCard = card.href === "/wishlist";
+                if (isRsvpCard || isWishlistCard) {
+                    return (
+                        <button
+                            type="button"
+                            data-rsvp-trigger={isRsvpCard ? true : undefined}
+                            data-wishlist-trigger={isWishlistCard ? true : undefined}
+                            class="group block w-full text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                        >
+                            <Card
+                                image={card.image}
+                                imageAlt={card.imageAlt}
+                                title={card.title}
+                                description={card.description}
+                            />
+                        </button>
+                    );
+                }
+
+                return (
+                    <a
+                        href={card.href}
+                        class="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                    >
+                        <Card
+                            image={card.image}
+                            imageAlt={card.imageAlt}
+                            title={card.title}
+                            description={card.description}
+                        />
+                    </a>
+                );
+            })
         }
     </div>
 </section>
+
+<div id="rsvp-modal" class="rsvp-modal" aria-hidden="true">
+    <div class="rsvp-modal__backdrop" data-rsvp-backdrop></div>
+    <div class="rsvp-modal__panel" role="dialog" aria-modal="true" aria-labelledby="rsvp-modal-title">
+        <button type="button" class="rsvp-modal__close" data-rsvp-close aria-label="Zamknij">×</button>
+        <div class="rsvp-modal__content">
+            <h2 id="rsvp-modal-title" class="text-2xl font-semibold">Potwierdź obecność</h2>
+            <p class="mt-4 text-base leading-relaxed text-slate-700">
+                Skontaktuj się z nami, by potwierdzić swoją obecność na ślubie.
+            </p>
+            <dl class="mt-6 space-y-5">
+                <div>
+                    <dt class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Michał — Telefon</dt>
+                    <dd class="mt-2 text-lg font-medium text-slate-900"><a href={`tel:${contact.phone}`}>{contact.phone}</a></dd>
+                </div>
+                <div>
+                    <dt class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Michał — E-mail</dt>
+                    <dd class="mt-2 text-lg font-medium text-slate-900"><a href={`mailto:${contact.email}`}>{contact.email}</a></dd>
+                </div>
+                <div>
+                    <dt class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Sylwia — Telefon</dt>
+                    <dd class="mt-2 text-lg font-medium text-slate-900"><a href={`tel:${contact.phoneSylwia}`}>{contact.phoneSylwia}</a></dd>
+                </div>
+                <div>
+                    <dt class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Sylwia — E-mail</dt>
+                    <dd class="mt-2 text-lg font-medium text-slate-900"><a href={`mailto:${contact.emailSylwia}`}>{contact.emailSylwia}</a></dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<div id="wishlist-modal" class="rsvp-modal" aria-hidden="true">
+    <div class="rsvp-modal__backdrop" data-rsvp-backdrop></div>
+    <div class="rsvp-modal__panel" role="dialog" aria-modal="true" aria-labelledby="wishlist-modal-title">
+        <button type="button" class="rsvp-modal__close" data-rsvp-close aria-label="Zamknij">×</button>
+        <div class="rsvp-modal__content">
+            <h2 id="wishlist-modal-title" class="text-2xl font-semibold">Lista życzeń</h2>
+            <p class="mt-4 text-base leading-relaxed text-slate-700">
+                Kwiaty szybko więdną, a my wolimy coś, co zostaje na dłużej – wino i koperta będą strzałem w dziesiątkę!
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const rsvpModal = document.getElementById("rsvp-modal");
+    const wishlistModal = document.getElementById("wishlist-modal");
+    const rsvpOpenButtons = document.querySelectorAll("[data-rsvp-trigger]");
+    const wishlistOpenButtons = document.querySelectorAll("[data-wishlist-trigger]");
+    const rsvpCloseButtons = rsvpModal?.querySelectorAll("[data-rsvp-close]");
+    const wishlistCloseButtons = wishlistModal?.querySelectorAll("[data-rsvp-close]");
+    const rsvpBackdrop = rsvpModal?.querySelector("[data-rsvp-backdrop]");
+    const wishlistBackdrop = wishlistModal?.querySelector("[data-rsvp-backdrop]");
+
+    function openModal(modal) {
+        if (!modal) return;
+        modal.classList.add("rsvp-modal--open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeModal(modal) {
+        if (!modal) return;
+        modal.classList.remove("rsvp-modal--open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+    }
+
+    rsvpOpenButtons.forEach((button) => button.addEventListener("click", () => openModal(rsvpModal)));
+    wishlistOpenButtons.forEach((button) => button.addEventListener("click", () => openModal(wishlistModal)));
+    rsvpCloseButtons?.forEach((button) => button.addEventListener("click", () => closeModal(rsvpModal)));
+    wishlistCloseButtons?.forEach((button) => button.addEventListener("click", () => closeModal(wishlistModal)));
+    rsvpBackdrop?.addEventListener("click", () => closeModal(rsvpModal));
+    wishlistBackdrop?.addEventListener("click", () => closeModal(wishlistModal));
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeModal(rsvpModal);
+            closeModal(wishlistModal);
+        }
+    });
+</script>
