@@ -30,10 +30,10 @@ schedule:
       label: "Kościół"
       title: "Ceremonia w kościele"
       description: >
-        Uroczysty ślub w kościele o 16:00. Prosimy o punktualne przybycie, by wspólnie
+        Uroczysty ślub w kościele o 15:30. Prosimy o punktualne przybycie, by wspólnie
         rozpocząć nasz dzień w modlitwie i błogosławieństwie.
       details:
-        - "Ceremonia rozpoczyna się o 16:00"
+        - "Ceremonia rozpoczyna się o 15:30"
         - "Prosimy o przybycie 15 minut wcześniej"
         - "Prosimy o wyciszenie telefonów"
     - number: "02"
@@ -102,7 +102,7 @@ countdown:
   message: >
     Każdy wschód słońca przybliża nas do chwili, w której spotkamy się razem.
     Zarezerwuj datę i przygotuj się na niezapomniane świętowanie.
-  target: "2026-08-06T16:00:00Z"
+  target: "2026-08-06T15:30:00Z"
   location: "Wrocław • Kościół Rzymskokatolicki pw. NMP na Piasku • Hotel Wodnik"
 
 contact:
