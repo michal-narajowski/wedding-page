@@ -7,6 +7,7 @@ export interface HeroContent {
   description: string;
   weekday: string;
   dateDisplay: string;
+  time: string;
   location: string;
 }
 
