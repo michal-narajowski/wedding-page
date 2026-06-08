@@ -44,18 +44,17 @@ schedule:
         Po ceremonii zapraszamy na rejs statkiem po Odrze — popłyniemy z kościoła
         bezpośrednio do Hotelu Wodnik, gdzie kontynuujemy świętowanie.
       details:
-        - "Zaokrętowanie po ceremonii (około 17:15)"
-        - "Przewidywany czas rejsu: ~45 minut"
-        - "Na pokładzie będą serwowane przekąski i drinki"
+        - "Zaokrętowanie po ceremonii (około 16:25)"
+        - "Przewidywany czas rejsu: ~30 minut"
+        - "Na pokładzie będzie serwowane wino musujące"
     - number: "03"
       label: "Przyjęcie"
-      title: "Przyjęcie w namiocie"
+      title: "Przyjęcie w namiocie bankietowym"
       description: >
         Po dopłynięciu do Hotelu Wodnik zapraszamy do namiotu na przyjęcie — obiad,
         pierwszy taniec, zdjęcia, drinki i zabawa do późna.
       details:
-        - "Wezwanie do stołu na obiad o 19:00"
-        - "Pierwszy taniec około 20:30"
+        - "Wezwanie do stołu na obiad o 17:00"
         - "Fotobudka i sesje zdjęciowe przez całą noc"
         - "DJ i tańce do późnych godzin"
 
