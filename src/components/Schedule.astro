@@ -74,6 +74,18 @@ const events = schedule.events ?? [];
                                 >
                                     {event.description}
                                 </p>
+                                {event.mapUrl && (
+                                    <p class="mt-4 text-base sm:text-lg lg:text-xl max-w-2xl" style="color: var(--color-secondary); opacity: 0.9;">
+                                        <a
+                                            href={event.mapUrl}
+                                            target="_blank"
+                                            rel="noreferrer noopener"
+                                            class="font-semibold underline"
+                                        >
+                                            Zobacz lokalizację w Google Maps
+                                        </a>
+                                    </p>
+                                )}
                                 <ul
                                     class="space-y-3 text-sm sm:text-base"
                                     style="color: var(--color-secondary); opacity: 0.8;"

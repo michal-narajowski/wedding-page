@@ -33,6 +33,7 @@ schedule:
       description: >
         Uroczysty ślub w kościele o 15:30. Prosimy o punktualne przybycie, by wspólnie
         rozpocząć nasz dzień w modlitwie i błogosławieństwie.
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Kościół+Rzymskokatolicki+pw.+NMP+na+Piasku+Wrocław"
       details:
         - "Ceremonia rozpoczyna się o 15:30"
         - "Prosimy o przybycie 15 minut wcześniej"
@@ -41,10 +42,12 @@ schedule:
       label: "Rejs"
       title: "Rejs statkiem po Odrze"
       description: >
-        Po ceremonii zapraszamy na rejs statkiem po Odrze — popłyniemy z kościoła
-        bezpośrednio do Hotelu Wodnik, gdzie kontynuujemy świętowanie.
+        Po ceremonii zapraszamy na rejs statkiem po Odrze — z Przystani Kardynalskiej za kościołem
+        popłyniemy bezpośrednio do Hotelu Wodnik, gdzie kontynuujemy świętowanie.
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Przystań+Kardynalska"
       details:
         - "Zaokrętowanie po ceremonii (około 16:25)"
+        - "Odpływamy z Przystani Kardynalskiej"
         - "Przewidywany czas rejsu: ~30 minut"
         - "Na pokładzie będzie serwowane wino musujące"
     - number: "03"
@@ -53,10 +56,22 @@ schedule:
       description: >
         Po dopłynięciu do Hotelu Wodnik zapraszamy do namiotu na przyjęcie — obiad,
         pierwszy taniec, zdjęcia, drinki i zabawa do późna.
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Hotel+Wodnik+Wrocław"
       details:
         - "Wezwanie do stołu na obiad o 17:00"
         - "Fotobudka i sesje zdjęciowe przez całą noc"
         - "DJ i tańce do późnych godzin"
+    - number: "04"
+      label: "Poprawiny"
+      title: "Poprawiny dla chętnych Gości"
+      description: >
+        Serdecznie zapraszamy chętnych Gości na poprawiny, które odbędą się następnego dnia po weselu, dnia 07.08.2026 w Gądowie od godziny 12:00. Będzie nam bardzo miło wspólnie spędzić jeszcze kilka chwil w swobodnej
+        i rodzinnej atmosferze.
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=ul.+Wierzbowa+16,+55-080+Gądów"
+      details:
+        - "Poprawiny odbędą się następnego dnia po weselu, dnia 07.08.2026 od godziny 12:00"
+        - "Miejsce: ul. Wierzbowa 16, 55-080 Gądów"
+        - "Swobodna i rodzinna atmosfera dla chętnych gości"
 
 gallery:
   eyebrow: "Galeria"
